@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("20211119_133911.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    transform: rotateY(-50%);
+    color: #fff;
+}
+
+.content h1{
+    font-size: 80px;
+    margin-top: 0px;
+}
+
+.content p {
+    margin: 10px auto;
+    line-height: 25px;
+    font-weight: 100;
+}
