@@ -6,13 +6,6 @@
     text-decoration: none;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("20211119_133911.jpg");
-    background-size: cover;
-    background-position: center;
-}
 /* navbar Styling */
 .max-width{
     max-width: 1300px;
@@ -22,9 +15,14 @@ body{
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 15px 0;
-    background-color: rgb(189, 243, 107);
+    padding: 30px 0;
+    /* background-color: rgb(189, 243, 107);  */
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: rgb(189, 243, 107);
 }
 .navbar .max-width{
     display: flex;
@@ -37,13 +35,29 @@ body{
     font-size: 40px;
     font-weight: 600;
 }
+
+.navbar .logo a span{
+    color:  rgb(189, 243, 107);
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
+}
 .navbar .menu li a{
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: 0.3s ease;
 }
 
+.navbar .menu li a:hover{
+    color: chartreuse;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -71,3 +85,4 @@ body{
     font-weight: 600;
     margin-left: 0px;
 }
+
