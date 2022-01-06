@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -88,6 +89,81 @@
 
 /* About styling */
 
+section{
+    padding: 100px 0;
+}
+
 .about{
-    
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "who we are";
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(189, 243, 107);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 50%;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 50%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: rgb(189, 243, 107);
+}
+.about .about-content .right .text p{
+    text-align: justify;
+}
+.about .about-content .right .text a{
+    text-align: justify;
 }
