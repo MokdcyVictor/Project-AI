@@ -23,7 +23,7 @@
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: rgb(189, 243, 107);
+    background: rgb(178, 240, 116);
 }
 .navbar .max-width{
     display: flex;
@@ -54,7 +54,7 @@
 }
 
 .navbar .menu li a:hover{
-    color: chartreuse;
+    color: rgb(183, 250, 116);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
